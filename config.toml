@@ -1,3 +1,4 @@
 baseURL = 'https://spr12ian.github.io/'
 languageCode = 'en-GB'
 title = 'My UK Gadgets & Me'
+theme = 'ananke'
