@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "What's It All About, Alfie"
+description: "About this website"
 featured_image: '/images/about.jpg'
 menu:
   main:
@@ -8,4 +8,7 @@ menu:
 ---
 {{< figure src="/images/about.jpg" title="About" >}}
 
-Musings ...
+This website serves a number of purposes:
+
++ There's a [blog](/posts)
++ There's a [gadgets](/gadgets) section
