@@ -1,10 +1,8 @@
 ---
-title: "Gadgets: etc."
+title: "My UK Gadgets: etc."
 
-description: "WOTTT!! The last theme you'll ever need. Maybe."
-# 1. To ensure Netlify triggers a build on our exampleSite instance, we need to change a file in the exampleSite directory.
-theme_version: '2.8.2'
+description: "Just Another Blog. Maybe."
 cascade:
-  featured_image: '/images/gohugo-default-sample-hero-image.jpg'
+  featured_image: '/images/index.jpg'
 ---
 Welcome to my blog with some of my work in progress. I've been working on this idea. You can read some of it below.
