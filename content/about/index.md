@@ -6,6 +6,6 @@ menu:
   main:
     weight: 1
 ---
-{{< figure src="/images/Victor_Hugo-Hunchback.jpg" title="Illustration from Victor Hugo et son temps (1881)" >}}
+{{< figure src="/images/about.jpg" title="About" >}}
 
 Musings ...
