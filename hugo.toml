@@ -3,3 +3,9 @@ languageCode = 'en-GB'
 sectionPagesMenu = 'main'
 theme = 'PaperMod'
 title = 'My UK Gadgets & Me'
+
+[params]
+
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowToc = true
