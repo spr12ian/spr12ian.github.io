@@ -1,7 +1,7 @@
 baseURL = 'https://spr12ian.github.io/'
 languageCode = 'en-GB'
 sectionPagesMenu = 'main'
-theme = 'PaperMod'
+theme = 'beautifulhugo'
 title = 'My UK Gadgets & Me'
 
 [params]
