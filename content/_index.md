@@ -1,8 +1,10 @@
 ---
 title: "My UK Gadgets: etc."
 
-description: "Just Another Blog. Maybe."
+description: "How do I rename this section"
 cascade:
   featured_image: '/images/index.jpg'
 ---
-Welcome to my blog with some of my work in progress. I've been working on this idea. You can read some of it below.
+Welcome to my blog.
+
+I'd like to rename this section from 'posts' to 'blog'.

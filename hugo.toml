@@ -4,6 +4,8 @@ paginate = 100
 sectionPagesMenu = 'main'
 theme = ["github.com/halogenica/beautifulhugo"]
 title = 'My UK Gadgets & Me'
+pygmentsUseClasses = true
+pygmentsCodeFences = true
 
 [params]
 

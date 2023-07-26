@@ -6,6 +6,8 @@ draft: true
 
 As at 2023-07-25 my hugo.toml file looks like:
 
+Why is this code block not rendering correctly?
+
 ```
 baseURL = 'https://spr12ian.github.io/'
 languageCode = 'en-GB'
@@ -20,3 +22,4 @@ ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowToc = true
 ```
+
