@@ -1,12 +1,11 @@
 ---
-title: "hugo.toml"
-date: 2023-07-25T22:36:32+01:00
+title: "Highlight"
+date: 2023-07-26T12:54:02+01:00
 draft: true
 ---
+This highlighting is not very good:
 
-As at 2023-07-25 my hugo.toml file looks like:
-
-```
+{{< highlight toml "linenos=inline, hl_lines=1 10-12" >}}
 baseURL = 'https://spr12ian.github.io/'
 languageCode = 'en-GB'
 paginate = 100
@@ -19,4 +18,4 @@ title = 'My UK Gadgets & Me'
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowToc = true
-```
+{{< /highlight >}}

@@ -1,12 +1,14 @@
 baseURL = 'https://spr12ian.github.io/'
+copyright = 'Ian Sweeney'
 languageCode = 'en-GB'
 paginate = 100
 sectionPagesMenu = 'main'
 theme = ["github.com/halogenica/beautifulhugo"]
 title = 'My UK Gadgets & Me'
+pygmentsUseClasses = true
+pygmentsCodeFences = true
 
 [params]
-
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowToc = true
