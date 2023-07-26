@@ -16,7 +16,7 @@ tags:
 ---
 My 5G broadband router sits on the window ledge in my office (spare bedroom). It connects directly to a network switch, the TP-Link [TL-SG1016D](https://www.tp-link.com/uk/business-networking/unmanaged-switch/tl-sg1016d/) Gigabit Switch which has 16 ports.
 
-1. Three ZTE 5G broadband router.
+1. Three [ZTE MC801A](https://ztedevices.com/en-gl/mc801a/) 5G broadband router.
 2. Lenovo K450 Desktop PC.
 3. IKEA Dirigera Hub.
 4. Synology NAS.
