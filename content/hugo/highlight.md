@@ -1,7 +1,6 @@
 ---
 title: "Highlight"
 date: 2023-07-26T12:54:02+01:00
-draft: true
 ---
 This highlighting is not very good:
 
@@ -19,3 +18,5 @@ ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowToc = true
 {{< /highlight >}}
+
+What's the solution?

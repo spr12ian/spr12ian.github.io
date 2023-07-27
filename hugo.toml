@@ -1,5 +1,6 @@
 baseURL = 'https://spr12ian.github.io/'
 copyright = 'Ian Sweeney'
+enableEmoji = true
 languageCode = 'en-GB'
 paginate = 100
 sectionPagesMenu = 'main'
