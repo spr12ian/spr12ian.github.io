@@ -5,6 +5,8 @@ description: "This blog is generated using Hugo"
 ---
 This blog is generated using [Hugo](https://gohugo.io) and so far I like it.
 
+### Further Reading {#more}
+
 https://gohugo.io/templates/internal/
 
 https://themes.gohugo.io/

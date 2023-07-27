@@ -1,7 +1,6 @@
 ---
 title: "TP-Link TL-SG1016D Gigabit Switch"
 date: 2023-07-26T15:30:55+01:00
-draft: false
 description: "16-Port Gigabit Desktop/Rackmount Network Switch"
 tags:
   - BT

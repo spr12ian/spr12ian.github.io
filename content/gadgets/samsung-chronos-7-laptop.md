@@ -1,7 +1,6 @@
 ---
 title: "Samsung Chronos 7 Laptop"
 date: 2023-07-18T20:49:29+01:00
-draft: false
 tags:
   - Chrome OS Flex
   - Debian

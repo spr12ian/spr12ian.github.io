@@ -1,7 +1,6 @@
 ---
 title: "Draft True"
 date: 2023-07-27T10:15:32+01:00
-draft: false
 ---
 In my setup
 ```hugo new filename```
