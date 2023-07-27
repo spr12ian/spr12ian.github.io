@@ -12,3 +12,10 @@ This website serves a number of purposes:
 
 + There's a [blog](/posts)
 + There's a [gadgets](/gadgets) section
++ There's a [Hugo](/hugo) section
+
+> Whenever I research a problem or question online, I always appreciate when some blogger took the time to write up that exact issue. Maybe some random post that I write will be useful to other people in turn.  Perhaps that person will be ***me***, when I inevitably run into the same issue six months later and forget what I knew!"
+
+— <cite>About Steve Perkins</cite>[^1]
+
+[^1]: [About Steve Perkins](https://steveperkins.com/about-steve-perkins/)
