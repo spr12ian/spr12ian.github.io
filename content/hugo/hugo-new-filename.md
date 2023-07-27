@@ -7,3 +7,6 @@ I use VS Code as my IDE of choice. Often, when starting a new page (or post) for
 
 
 Why can't I just create a .md file using VS in any subfolder of the content folder?
+
+IDE
+: Integrated Development Environment
