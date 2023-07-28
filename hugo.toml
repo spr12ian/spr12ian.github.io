@@ -9,7 +9,27 @@ title = 'My UK Gadgets & Me'
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 
+[module]
+  [module.hugoVersion]
+    extended = true
+[[module.imports]]
+  path = 'github.com/halogenica/beautifulhugo'
+
 [params]
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowToc = true
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true

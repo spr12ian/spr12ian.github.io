@@ -1,0 +1,530 @@
+archetypedir = 'archetypes'
+assetdir = 'assets'
+baseurl = 'https://spr12ian.github.io/'
+contentdir = 'content'
+copyright = 'Ian Sweeney'
+datadir = 'data'
+defaultcontentlanguage = 'en'
+enableemoji = true
+environment = 'production'
+i18ndir = 'i18n'
+languagecode = 'en-GB'
+layoutdir = 'layouts'
+paginate = 100.0
+paginatepath = 'page'
+pluralizelisttitles = true
+publishdir = 'public'
+resourcedir = 'resources'
+sectionpagesmenu = 'main'
+staticdir = ['static']
+summarylength = 70.0
+theme = ['github.com/halogenica/beautifulhugo']
+themesdir = 'themes'
+timeout = '30s'
+title = 'My UK Gadgets & Me'
+titlecasestyle = 'AP'
+workingdir = '/home/hopesurvives/projects/spr12ian.github.io'
+
+[build]
+  useresourcecachewhen = 'fallback'
+
+  [build.buildstats]
+
+[[build.cachebusters]]
+  source = 'assets/.*\.(js|ts|jsx|tsx)'
+  target = '(js|scripts|javascript)'
+
+[[build.cachebusters]]
+  source = 'assets/.*\.(css|sass|scss)$'
+  target = '(css|styles|scss|sass)'
+
+[[build.cachebusters]]
+  source = '(postcss|tailwind)\.config\.js'
+  target = '(css|styles|scss|sass)'
+
+[[build.cachebusters]]
+  source = 'assets/.*\.(.*)$'
+  target = '$1'
+
+[caches]
+  [caches.assets]
+    dir = ':resourceDir/_gen'
+    isresourcedir = true
+    maxage = -1.0
+
+  [caches.getcsv]
+    dir = ':cacheDir/:project'
+    maxage = -1.0
+
+  [caches.getjson]
+    dir = ':cacheDir/:project'
+    maxage = -1.0
+
+  [caches.getresource]
+    dir = ':cacheDir/:project'
+    maxage = -1.0
+
+  [caches.images]
+    dir = ':resourceDir/_gen'
+    isresourcedir = true
+    maxage = -1.0
+
+  [caches.modules]
+    dir = ':cacheDir/modules'
+    maxage = -1.0
+
+[deployment]
+  invalidatecdn = true
+  maxdeletes = 256.0
+  workers = 10.0
+
+[frontmatter]
+  date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']
+  expirydate = ['expirydate', 'unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
+  publishdate = ['publishdate', 'pubdate', 'published', 'date']
+
+[imaging]
+  bgcolor = '#ffffff'
+  hint = 'photo'
+  quality = 75.0
+  resamplefilter = 'box'
+
+[languages]
+  [languages.en]
+    languagecode = 'en-GB'
+
+[markup]
+  defaultmarkdownhandler = 'goldmark'
+
+  [markup.asciidocext]
+    backend = 'html5'
+    failurelevel = 'fatal'
+    noheaderorfooter = true
+    safemode = 'unsafe'
+
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionlist = true
+      footnote = true
+      linkify = true
+      linkifyprotocol = 'https'
+      strikethrough = true
+      table = true
+      tasklist = true
+
+      [markup.goldmark.extensions.typographer]
+        apostrophe = '&rsquo;'
+        ellipsis = '&hellip;'
+        emdash = '&mdash;'
+        endash = '&ndash;'
+        leftanglequote = '&laquo;'
+        leftdoublequote = '&ldquo;'
+        leftsinglequote = '&lsquo;'
+        rightanglequote = '&raquo;'
+        rightdoublequote = '&rdquo;'
+        rightsinglequote = '&rsquo;'
+
+    [markup.goldmark.parser]
+      autoheadingid = true
+      autoheadingidtype = 'github'
+      wrapstandaloneimagewithinparagraph = true
+
+      [markup.goldmark.parser.attribute]
+        title = true
+
+    [markup.goldmark.renderer]
+
+  [markup.highlight]
+    codefences = true
+    linenostart = 1.0
+    linenumbersintable = true
+    style = 'monokai'
+    tabwidth = 4.0
+
+  [markup.tableofcontents]
+    endlevel = 3.0
+    startlevel = 2.0
+
+[mediatypes]
+  [mediatypes.'application/json']
+    delimiter = '.'
+    suffixes = ['json']
+
+  [mediatypes.'application/manifest+json']
+    delimiter = '.'
+    suffixes = ['webmanifest']
+
+  [mediatypes.'application/octet-stream']
+    delimiter = '.'
+
+  [mediatypes.'application/pdf']
+    delimiter = '.'
+    suffixes = ['pdf']
+
+  [mediatypes.'application/rss+xml']
+    delimiter = '.'
+    suffixes = ['xml', 'rss']
+
+  [mediatypes.'application/toml']
+    delimiter = '.'
+    suffixes = ['toml']
+
+  [mediatypes.'application/wasm']
+    delimiter = '.'
+    suffixes = ['wasm']
+
+  [mediatypes.'application/xml']
+    delimiter = '.'
+    suffixes = ['xml']
+
+  [mediatypes.'application/yaml']
+    delimiter = '.'
+    suffixes = ['yaml', 'yml']
+
+  [mediatypes.'font/otf']
+    delimiter = '.'
+    suffixes = ['otf']
+
+  [mediatypes.'font/ttf']
+    delimiter = '.'
+    suffixes = ['ttf']
+
+  [mediatypes.'image/bmp']
+    delimiter = '.'
+    suffixes = ['bmp']
+
+  [mediatypes.'image/gif']
+    delimiter = '.'
+    suffixes = ['gif']
+
+  [mediatypes.'image/jpeg']
+    delimiter = '.'
+    suffixes = ['jpg', 'jpeg', 'jpe', 'jif', 'jfif']
+
+  [mediatypes.'image/png']
+    delimiter = '.'
+    suffixes = ['png']
+
+  [mediatypes.'image/svg+xml']
+    delimiter = '.'
+    suffixes = ['svg']
+
+  [mediatypes.'image/tiff']
+    delimiter = '.'
+    suffixes = ['tif', 'tiff']
+
+  [mediatypes.'image/webp']
+    delimiter = '.'
+    suffixes = ['webp']
+
+  [mediatypes.'text/calendar']
+    delimiter = '.'
+    suffixes = ['ics']
+
+  [mediatypes.'text/css']
+    delimiter = '.'
+    suffixes = ['css']
+
+  [mediatypes.'text/csv']
+    delimiter = '.'
+    suffixes = ['csv']
+
+  [mediatypes.'text/html']
+    delimiter = '.'
+    suffixes = ['html']
+
+  [mediatypes.'text/javascript']
+    delimiter = '.'
+    suffixes = ['js', 'jsm', 'mjs']
+
+  [mediatypes.'text/jsx']
+    delimiter = '.'
+    suffixes = ['jsx']
+
+  [mediatypes.'text/markdown']
+    delimiter = '.'
+    suffixes = ['md', 'markdown']
+
+  [mediatypes.'text/plain']
+    delimiter = '.'
+    suffixes = ['txt']
+
+  [mediatypes.'text/tsx']
+    delimiter = '.'
+    suffixes = ['tsx']
+
+  [mediatypes.'text/typescript']
+    delimiter = '.'
+    suffixes = ['ts']
+
+  [mediatypes.'text/x-sass']
+    delimiter = '.'
+    suffixes = ['sass']
+
+  [mediatypes.'text/x-scss']
+    delimiter = '.'
+    suffixes = ['scss']
+
+  [mediatypes.'video/3gpp']
+    delimiter = '.'
+    suffixes = ['3gpp', '3gp']
+
+  [mediatypes.'video/mp4']
+    delimiter = '.'
+    suffixes = ['mp4']
+
+  [mediatypes.'video/mpeg']
+    delimiter = '.'
+    suffixes = ['mpg', 'mpeg']
+
+  [mediatypes.'video/ogg']
+    delimiter = '.'
+    suffixes = ['ogv']
+
+  [mediatypes.'video/webm']
+    delimiter = '.'
+    suffixes = ['webm']
+
+  [mediatypes.'video/x-msvideo']
+    delimiter = '.'
+    suffixes = ['avi']
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      keepcss2 = true
+
+    [minify.tdewolff.html]
+      keepconditionalcomments = true
+      keepdefaultattrvals = true
+      keepdocumenttags = true
+      keependtags = true
+
+    [minify.tdewolff.js]
+      version = 2022.0
+
+    [minify.tdewolff.json]
+
+    [minify.tdewolff.svg]
+
+    [minify.tdewolff.xml]
+
+[module]
+  noproxy = 'none'
+  private = '*.*'
+  proxy = 'direct'
+  workspace = 'off'
+
+  [module.hugoversion]
+    extended = true
+
+[[module.imports]]
+  path = 'github.com/halogenica/beautifulhugo'
+
+[[module.imports]]
+  path = 'github.com/halogenica/beautifulhugo'
+
+[[module.mounts]]
+  source = 'content'
+  target = 'content'
+
+[[module.mounts]]
+  source = 'data'
+  target = 'data'
+
+[[module.mounts]]
+  source = 'layouts'
+  target = 'layouts'
+
+[[module.mounts]]
+  source = 'i18n'
+  target = 'i18n'
+
+[[module.mounts]]
+  source = 'archetypes'
+  target = 'archetypes'
+
+[[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+
+[outputformats]
+  [outputformats.amp]
+    basename = 'index'
+    ishtml = true
+    mediatype = 'text/html'
+    name = 'amp'
+    path = 'amp'
+    permalinkable = true
+    rel = 'amphtml'
+
+  [outputformats.calendar]
+    basename = 'index'
+    isplaintext = true
+    mediatype = 'text/calendar'
+    name = 'calendar'
+    protocol = 'webcal://'
+    rel = 'alternate'
+
+  [outputformats.css]
+    basename = 'styles'
+    isplaintext = true
+    mediatype = 'text/css'
+    name = 'css'
+    notalternative = true
+    rel = 'stylesheet'
+
+  [outputformats.csv]
+    basename = 'index'
+    isplaintext = true
+    mediatype = 'text/csv'
+    name = 'csv'
+    rel = 'alternate'
+
+  [outputformats.html]
+    basename = 'index'
+    ishtml = true
+    mediatype = 'text/html'
+    name = 'html'
+    permalinkable = true
+    rel = 'canonical'
+    weight = 10.0
+
+  [outputformats.json]
+    basename = 'index'
+    isplaintext = true
+    mediatype = 'application/json'
+    name = 'json'
+    rel = 'alternate'
+
+  [outputformats.markdown]
+    basename = 'index'
+    isplaintext = true
+    mediatype = 'text/markdown'
+    name = 'markdown'
+    rel = 'alternate'
+
+  [outputformats.robots]
+    basename = 'robots'
+    isplaintext = true
+    mediatype = 'text/plain'
+    name = 'robots'
+    rel = 'alternate'
+
+  [outputformats.rss]
+    basename = 'index'
+    mediatype = 'application/rss+xml'
+    name = 'rss'
+    nougly = true
+    rel = 'alternate'
+
+  [outputformats.sitemap]
+    basename = 'sitemap'
+    mediatype = 'application/xml'
+    name = 'sitemap'
+    nougly = true
+    rel = 'sitemap'
+
+  [outputformats.webappmanifest]
+    basename = 'manifest'
+    isplaintext = true
+    mediatype = 'application/manifest+json'
+    name = 'webappmanifest'
+    notalternative = true
+    rel = 'manifest'
+
+[outputs]
+  home = ['html', 'rss']
+  page = ['html']
+  rss = ['rss']
+  section = ['html', 'rss']
+  taxonomy = ['html', 'rss']
+  term = ['html', 'rss']
+
+[params]
+  showbreadcrumbs = true
+  showpostnavlinks = true
+  showtoc = true
+
+[permalinks]
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+
+  [privacy.googleanalytics]
+    disable = true
+
+  [privacy.instagram]
+    disable = true
+
+  [privacy.twitter]
+    disable = true
+
+  [privacy.vimeo]
+    disable = true
+
+  [privacy.youtube]
+    disable = true
+
+[related]
+  threshold = 80.0
+
+[[related.indices]]
+  name = 'keywords'
+  type = 'basic'
+  weight = 100.0
+
+[[related.indices]]
+  name = 'date'
+  type = 'basic'
+  weight = 10.0
+
+[[related.indices]]
+  name = 'tags'
+  weight = 80.0
+
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$']
+    osenv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|GIT_EXEC_PATH|LD_LIBRARY_PATH|npm_config_(cache|init_module|userconfig)|pandoc_datadir|PYTHONHOME|SNAP|RUBYLIB)$']
+
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$']
+
+  [security.gotemplates]
+
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
+
+[server]
+[[server.redirects]]
+  from = '**'
+  status = 404.0
+  to = '/404.html'
+
+[services]
+  [services.disqus]
+
+  [services.googleanalytics]
+
+  [services.instagram]
+
+  [services.rss]
+    limit = -1.0
+
+  [services.twitter]
+
+[sitemap]
+  filename = 'sitemap.xml'
+  priority = -1.0
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
