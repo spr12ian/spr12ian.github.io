@@ -17,6 +17,7 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
 #### [Categories](https://gohugo.io/categories) {#categories}
 
 #### [Commands](https://gohugo.io/commands) {#commands}
++ [hugo](https://gohugo.io/commands/hugo) - hugo is the main command, used to build your Hugo site.
 + [completion](https://gohugo.io/commands/hugo_completion)
     + [bash](https://gohugo.io/commands/hugo_completion_bash)
     + [fish](https://gohugo.io/commands/hugo_completion_fish)
@@ -32,8 +33,8 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
 + [env](https://gohugo.io/commands/hugo_env)
 + [gen](https://gohugo.io/commands/hugo_gen)
     + [chromastyles](https://gohugo.io/commands/hugo_gen_chromastyles)
-    + [doc](https://gohugo.io/commands/hugo_gen_doc)
-    + [man](https://gohugo.io/commands/hugo_gen_man)
+    + [doc](https://gohugo.io/commands/hugo_gen_doc) - See issue at [Stack Overflow](https://stackoverflow.com/questions/76795491/hugo-gen-doc-produces-no-documentation)
+    + [man](https://gohugo.io/commands/hugo_gen_man) - ToDo: Where should I put the man pages?
 + [import](https://gohugo.io/commands/hugo_import)
     + [jekyll](https://gohugo.io/commands/hugo_import_jekyll)
 + [list](https://gohugo.io/commands/hugo_list)
@@ -41,24 +42,23 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
     + [drafts](https://gohugo.io/commands/hugo_list_drafts)
     + [expired](https://gohugo.io/commands/hugo_list_expired)
     + [future](https://gohugo.io/commands/hugo_list_future)
-+ https://gohugo.io/commands/hugo_mod_clean/
-+ https://gohugo.io/commands/hugo_mod_get/
-+ https://gohugo.io/commands/hugo_mod_graph/
-+ https://gohugo.io/commands/hugo_mod_init/
-+ https://gohugo.io/commands/hugo_mod_npm_pack/
-+ https://gohugo.io/commands/hugo_mod_npm/
-+ https://gohugo.io/commands/hugo_mod_tidy/
-+ https://gohugo.io/commands/hugo_mod_vendor/
-+ https://gohugo.io/commands/hugo_mod_verify/
-+ https://gohugo.io/commands/hugo_mod/
++ [mod](https://gohugo.io/commands/hugo_mod)
+    + [clean](https://gohugo.io/commands/hugo_mod_clean)
+    + [get](https://gohugo.io/commands/hugo_mod_get)
+    + [graph](https://gohugo.io/commands/hugo_mod_graph)
+    + [init](https://gohugo.io/commands/hugo_mod_init)
+    + [pack](https://gohugo.io/commands/hugo_mod_npm_pack)
+    + [npm](https://gohugo.io/commands/hugo_mod_npm)
+    + [tidy](https://gohugo.io/commands/hugo_mod_tidy)
+    + [vendor](https://gohugo.io/commands/hugo_mod_vendor)
+    + [verify](https://gohugo.io/commands/hugo_mod_verify)
++ [new](https://gohugo.io/commands/hugo_new)
 + https://gohugo.io/commands/hugo_new_content/
 + https://gohugo.io/commands/hugo_new_site/
 + https://gohugo.io/commands/hugo_new_theme/
-+ https://gohugo.io/commands/hugo_new/
-+ https://gohugo.io/commands/hugo_server_trust/
 + https://gohugo.io/commands/hugo_server/
++ https://gohugo.io/commands/hugo_server_trust/
 + https://gohugo.io/commands/hugo_version/
-+ https://gohugo.io/commands/hugo/
 
 #### [Content Management](https://gohugo.io/content-management) {#content-management}
 + https://gohugo.io/content-management/archetypes/
