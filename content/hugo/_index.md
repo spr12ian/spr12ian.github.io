@@ -90,7 +90,6 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
 + [documentation](https://gohugo.io/contribute/documentation)
 + [themes](https://gohugo.io/contribute/themes)
 
-
 #### [Documentation](https://gohugo.io/documentation) {#documentation}
 
 #### [Functions](/hugo/functions) {#functions}
@@ -177,15 +176,15 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
 + https://gohugo.io/templates/views/
 
 #### [Tools](https://gohugo.io/tools) {#tools}
-+ https://gohugo.io/tools/editors/
-+ https://gohugo.io/tools/frontends/
-+ https://gohugo.io/tools/migrations/
-+ https://gohugo.io/tools/other/
-+ https://gohugo.io/tools/search/
++ [Editors](https://gohugo.io/tools/editors)
++ [Frontends](https://gohugo.io/tools/frontends)
++ [Migrations](https://gohugo.io/tools/migrations)
++ [Other](https://gohugo.io/tools/other)
++ [Search](https://gohugo.io/tools/search)
 
 #### [Troubleshooting](https://gohugo.io/troubleshooting) {#troubleshooting}
-+ https://gohugo.io/troubleshooting/build-performance/
-+ https://gohugo.io/troubleshooting/faq/
++ [build performance](https://gohugo.io/troubleshooting/build-performance)
++ [faq](https://gohugo.io/troubleshooting/faq)
 
 #### [Variables](https://gohugo.io/variables) {#variables}
 + https://gohugo.io/variables/files/
