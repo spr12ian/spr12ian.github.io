@@ -34,13 +34,13 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
     + [chromastyles](https://gohugo.io/commands/hugo_gen_chromastyles)
     + [doc](https://gohugo.io/commands/hugo_gen_doc)
     + [man](https://gohugo.io/commands/hugo_gen_man)
-+ https://gohugo.io/commands/hugo_import_jekyll/
-+ https://gohugo.io/commands/hugo_import/
-+ https://gohugo.io/commands/hugo_list_all/
-+ https://gohugo.io/commands/hugo_list_drafts/
-+ https://gohugo.io/commands/hugo_list_expired/
-+ https://gohugo.io/commands/hugo_list_future/
-+ https://gohugo.io/commands/hugo_list/
++ [import](https://gohugo.io/commands/hugo_import)
+    + [jekyll](https://gohugo.io/commands/hugo_import_jekyll)
++ [list](https://gohugo.io/commands/hugo_list)
+    + [all](https://gohugo.io/commands/hugo_list_all)
+    + [drafts](https://gohugo.io/commands/hugo_list_drafts)
+    + [expired](https://gohugo.io/commands/hugo_list_expired)
+    + [future](https://gohugo.io/commands/hugo_list_future)
 + https://gohugo.io/commands/hugo_mod_clean/
 + https://gohugo.io/commands/hugo_mod_get/
 + https://gohugo.io/commands/hugo_mod_graph/
