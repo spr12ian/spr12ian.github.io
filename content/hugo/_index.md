@@ -61,190 +61,47 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
 + [version](https://gohugo.io/commands/hugo_version)
 
 #### [Content Management](https://gohugo.io/content-management) {#content-management}
-+ https://gohugo.io/content-management/archetypes/
-+ https://gohugo.io/content-management/build-options/
-+ https://gohugo.io/content-management/comments/
-+ https://gohugo.io/content-management/cross-references/
-+ https://gohugo.io/content-management/diagrams/
-+ https://gohugo.io/content-management/formats/
-+ https://gohugo.io/content-management/front-matter/
-+ https://gohugo.io/content-management/image-processing/
-+ https://gohugo.io/content-management/menus/
-+ https://gohugo.io/content-management/multilingual/
-+ https://gohugo.io/content-management/organization/
-+ https://gohugo.io/content-management/page-bundles/
-+ https://gohugo.io/content-management/page-resources/
-+ https://gohugo.io/content-management/related/
-+ https://gohugo.io/content-management/sections/
-+ https://gohugo.io/content-management/shortcodes/
-+ https://gohugo.io/content-management/static-files/
-+ https://gohugo.io/content-management/summaries/
-+ https://gohugo.io/content-management/syntax-highlighting/
-+ https://gohugo.io/content-management/taxonomies/
-+ https://gohugo.io/content-management/toc/
-+ https://gohugo.io/content-management/types/
-+ https://gohugo.io/content-management/urls/
++ https://gohugo.io/content-management/archetypes
++ https://gohugo.io/content-management/build-options
++ https://gohugo.io/content-management/comments
++ https://gohugo.io/content-management/cross-references
++ https://gohugo.io/content-management/diagrams
++ https://gohugo.io/content-management/formats
++ https://gohugo.io/content-management/front-matter
++ https://gohugo.io/content-management/image-processing
++ https://gohugo.io/content-management/menus
++ https://gohugo.io/content-management/multilingual
++ https://gohugo.io/content-management/organization
++ https://gohugo.io/content-management/page-bundles
++ https://gohugo.io/content-management/page-resources
++ https://gohugo.io/content-management/related
++ https://gohugo.io/content-management/sections
++ https://gohugo.io/content-management/shortcodes
++ https://gohugo.io/content-management/static-files
++ https://gohugo.io/content-management/summaries
++ https://gohugo.io/content-management/syntax-highlighting
++ https://gohugo.io/content-management/taxonomies
++ https://gohugo.io/content-management/toc
++ https://gohugo.io/content-management/types
++ https://gohugo.io/content-management/urls
 
 #### [Contribute](https://gohugo.io/contribute) {#contribute}
-+ https://gohugo.io/contribute/development/
-+ https://gohugo.io/contribute/documentation/
-+ https://gohugo.io/contribute/themes/
++ [development](https://gohugo.io/contribute/development)
++ [documentation](https://gohugo.io/contribute/documentation)
++ [themes](https://gohugo.io/contribute/themes)
 
 
 #### [Documentation](https://gohugo.io/documentation) {#documentation}
 
-#### [Functions](https://gohugo.io/functions) {#functions}
-+ https://gohugo.io/functions/abslangurl/
-+ https://gohugo.io/functions/absurl/
-+ https://gohugo.io/functions/adddate/
-+ https://gohugo.io/functions/after/
-+ https://gohugo.io/functions/anchorize/
-+ https://gohugo.io/functions/append/
-+ https://gohugo.io/functions/apply/
-+ https://gohugo.io/functions/base64/
-+ https://gohugo.io/functions/chomp/
-+ https://gohugo.io/functions/complement/
-+ https://gohugo.io/functions/cond/
-+ https://gohugo.io/functions/countrunes/
-+ https://gohugo.io/functions/countwords/
-+ https://gohugo.io/functions/crypto.fnv32a/
-+ https://gohugo.io/functions/dateformat/
-+ https://gohugo.io/functions/default/
-+ https://gohugo.io/functions/delimit/
-+ https://gohugo.io/functions/dict/
-+ https://gohugo.io/functions/duration/
-+ https://gohugo.io/functions/echoparam/
-+ https://gohugo.io/functions/emojify/
-+ https://gohugo.io/functions/eq/
-+ https://gohugo.io/functions/errorf/
-+ https://gohugo.io/functions/fileexists/
-+ https://gohugo.io/functions/findre/
-+ https://gohugo.io/functions/findresubmatch/
-+ https://gohugo.io/functions/first/
-+ https://gohugo.io/functions/float/
-+ https://gohugo.io/functions/format/
-+ https://gohugo.io/functions/ge/
-+ https://gohugo.io/functions/get/
-+ https://gohugo.io/functions/getenv/
-+ https://gohugo.io/functions/getpage/
-+ https://gohugo.io/functions/group/
-+ https://gohugo.io/functions/gt/
-+ https://gohugo.io/functions/hasmenucurrent/
-+ https://gohugo.io/functions/hasprefix/
-+ https://gohugo.io/functions/hassuffix/
-+ https://gohugo.io/functions/highlight/
-+ https://gohugo.io/functions/hmac/
-+ https://gohugo.io/functions/htmlescape/
-+ https://gohugo.io/functions/htmlunescape/
-+ https://gohugo.io/functions/hugo/
-+ https://gohugo.io/functions/humanize/
-+ https://gohugo.io/functions/i18n/
-+ https://gohugo.io/functions/images/
-+ https://gohugo.io/functions/in/
-+ https://gohugo.io/functions/index-function/
-+ https://gohugo.io/functions/int/
-+ https://gohugo.io/functions/intersect/
-+ https://gohugo.io/functions/ismenucurrent/
-+ https://gohugo.io/functions/isset/
-+ https://gohugo.io/functions/jsonify/
-+ https://gohugo.io/functions/lang.merge/
-+ https://gohugo.io/functions/lang/
-+ https://gohugo.io/functions/last/
-+ https://gohugo.io/functions/le/
-+ https://gohugo.io/functions/len/
-+ https://gohugo.io/functions/lower/
-+ https://gohugo.io/functions/lt/
-+ https://gohugo.io/functions/markdownify/
-+ https://gohugo.io/functions/math/
-+ https://gohugo.io/functions/md5/
-+ https://gohugo.io/functions/merge/
-+ https://gohugo.io/functions/ne/
-+ https://gohugo.io/functions/now/
-+ https://gohugo.io/functions/os.stat/
-+ https://gohugo.io/functions/param/
-+ https://gohugo.io/functions/partialcached/
-+ https://gohugo.io/functions/path.base/
-+ https://gohugo.io/functions/path.basename/
-+ https://gohugo.io/functions/path.clean/
-+ https://gohugo.io/functions/path.dir/
-+ https://gohugo.io/functions/path.ext/
-+ https://gohugo.io/functions/path.join/
-+ https://gohugo.io/functions/path.split/
-+ https://gohugo.io/functions/plainify/
-+ https://gohugo.io/functions/pluralize/
-+ https://gohugo.io/functions/print/
-+ https://gohugo.io/functions/printf/
-+ https://gohugo.io/functions/println/
-+ https://gohugo.io/functions/querify/
-+ https://gohugo.io/functions/range/
-+ https://gohugo.io/functions/readdir/
-+ https://gohugo.io/functions/readfile/
-+ https://gohugo.io/functions/ref/
-+ https://gohugo.io/functions/reflect.ismap/
-+ https://gohugo.io/functions/reflect.isslice/
-+ https://gohugo.io/functions/rellangurl/
-+ https://gohugo.io/functions/relref/
-+ https://gohugo.io/functions/relurl/
-+ https://gohugo.io/functions/render/
-+ https://gohugo.io/functions/renderstring/
-+ https://gohugo.io/functions/replace/
-+ https://gohugo.io/functions/replacere/
-+ https://gohugo.io/functions/safecss/
-+ https://gohugo.io/functions/safehtml/
-+ https://gohugo.io/functions/safehtmlattr/
-+ https://gohugo.io/functions/safejs/
-+ https://gohugo.io/functions/safeurl/
-+ https://gohugo.io/functions/scratch/
-+ https://gohugo.io/functions/seq/
-+ https://gohugo.io/functions/sha/
-+ https://gohugo.io/functions/shuffle/
-+ https://gohugo.io/functions/singularize/
-+ https://gohugo.io/functions/site/
-+ https://gohugo.io/functions/slice/
-+ https://gohugo.io/functions/slicestr/
-+ https://gohugo.io/functions/sort/
-+ https://gohugo.io/functions/split/
-+ https://gohugo.io/functions/store/
-+ https://gohugo.io/functions/string/
-+ https://gohugo.io/functions/strings.contains/
-+ https://gohugo.io/functions/strings.containsany/
-+ https://gohugo.io/functions/strings.count/
-+ https://gohugo.io/functions/strings.firstupper/
-+ https://gohugo.io/functions/strings.hasprefix/
-+ https://gohugo.io/functions/strings.hassuffix/
-+ https://gohugo.io/functions/strings.repeat/
-+ https://gohugo.io/functions/strings.runecount/
-+ https://gohugo.io/functions/strings.trimleft/
-+ https://gohugo.io/functions/strings.trimprefix/
-+ https://gohugo.io/functions/strings.trimright/
-+ https://gohugo.io/functions/strings.trimsuffix/
-+ https://gohugo.io/functions/substr/
-+ https://gohugo.io/functions/symdiff/
-+ https://gohugo.io/functions/templates.exists/
-+ https://gohugo.io/functions/time.parseduration/
-+ https://gohugo.io/functions/time/
-+ https://gohugo.io/functions/title/
-+ https://gohugo.io/functions/transform.unmarshal/
-+ https://gohugo.io/functions/trim/
-+ https://gohugo.io/functions/truncate/
-+ https://gohugo.io/functions/union/
-+ https://gohugo.io/functions/uniq/
-+ https://gohugo.io/functions/unix/
-+ https://gohugo.io/functions/upper/
-+ https://gohugo.io/functions/urlize/
-+ https://gohugo.io/functions/urlquery/
-+ https://gohugo.io/functions/urls.joinpath/
-+ https://gohugo.io/functions/urls.parse/
-+ https://gohugo.io/functions/where/
-+ https://gohugo.io/functions/with/
+#### [Functions](/hugo/functions) {#functions}
 
 #### [Getting Started](https://gohugo.io/getting-started) {#getting-started}
-+ https://gohugo.io/getting-started/configuration-markup/
-+ https://gohugo.io/getting-started/configuration/
-+ https://gohugo.io/getting-started/directory-structure/
-+ https://gohugo.io/getting-started/external-learning-resources/
-+ https://gohugo.io/getting-started/quick-start/
-+ https://gohugo.io/getting-started/usage/
++ [Configure Hugo](https://gohugo.io/getting-started/configuration)
++ [Configure markup](https://gohugo.io/getting-started/configuration-markup)
++ [Directory structure](https://gohugo.io/getting-started/directory-structure)
++ [External learning resources](https://gohugo.io/getting-started/external-learning-resources)
++ [Quick start)](https://gohugo.io/getting-started/quick-start)
++ [Usage](https://gohugo.io/getting-started/usage)
 
 #### [Hosting & Deployment](https://gohugo.io/hosting-and-deployment) {#hosting-and-deployment}
 + https://gohugo.io/hosting-and-deployment/deployment-with-rclone/
@@ -262,13 +119,11 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
 + https://gohugo.io/hosting-and-deployment/hugo-deploy/
 
 #### [Modules](https://gohugo.io/hugo-modules) {#hugo-modules}
-+ https://gohugo.io/hugo-modules/
-+ https://gohugo.io/hugo-modules/configuration/
-+ https://gohugo.io/hugo-modules/theme-components/
-+ https://gohugo.io/hugo-modules/use-modules/
++ [configuration](https://gohugo.io/hugo-modules/configuration)
++ [theme-components](https://gohugo.io/hugo-modules/theme-components)
++ [use-modules](https://gohugo.io/hugo-modules/use-modules)
 
 #### [Pipes](https://gohugo.io/hugo-pipes) {#hugo-pipes}
-+ https://gohugo.io/hugo-pipes/
 + https://gohugo.io/hugo-pipes/babel/
 + https://gohugo.io/hugo-pipes/bundling/
 + https://gohugo.io/hugo-pipes/fingerprint/
@@ -282,27 +137,18 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
 + https://gohugo.io/hugo-pipes/transpile-sass-to-css/
 
 #### [Installation](https://gohugo.io/installation) {#installation}
-+ https://gohugo.io/installation/
-+ https://gohugo.io/installation/bsd/
-+ https://gohugo.io/installation/linux/
-+ https://gohugo.io/installation/macos/
-+ https://gohugo.io/installation/windows/
++ [bsd](https://gohugo.io/installation/bsd)
++ [linux](https://gohugo.io/installation/linux)
++ [macos](https://gohugo.io/installation/macos)
++ [windows](https://gohugo.io/installation/windows)
 
 #### [Maintenance](https://gohugo.io/maintenance) {#maintenance}
 
-#### [Installation](https://gohugo.io/installation) {#installation}
-
 #### [My Showcase](https://gohugo.io/myshowcase) {#my-showcase}
 
-#### [News](https://gohugo.io/news) {#news}
-Last updated December 23, 2021. I'm not sure the optics are good here for what should be a blog about Hugo! I think it might be better to lose 'News' from the navigation, or somehow git pull 'news' items from the GitHub feed.
-+ https://gohugo.io/news/2021/0.91.2-relnotes/
-+ https://gohugo.io/news/hugo-macos-intel-vs-arm/
-+ https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/
-+ https://gohugo.io/news/no-more-releasenotes-here/
+#### [Release Notes](https://github.com/gohugoio/hugo/releases) {#releas-notes}
 
 #### [Showcase](https://gohugo.io/showcase) {#showcase}
-+ https://gohugo.io/showcase/
 + https://gohugo.io/showcase/1password-support/
 + https://gohugo.io/showcase/alora-labs/
 + https://gohugo.io/showcase/ampio-help/
@@ -322,7 +168,6 @@ Last updated December 23, 2021. I'm not sure the optics are good here for what s
 + https://gohugo.io/showcase/tomango/
 
 #### [Templates](https://gohugo.io/templates) {#templates}
-+ https://gohugo.io/templates/
 + https://gohugo.io/templates/menu-templates/
 + https://gohugo.io/templates/404/
 + https://gohugo.io/templates/base/
@@ -349,7 +194,6 @@ Last updated December 23, 2021. I'm not sure the optics are good here for what s
 + https://gohugo.io/templates/views/
 
 #### [Tools](https://gohugo.io/tools) {#tools}
-+ https://gohugo.io/tools/
 + https://gohugo.io/tools/editors/
 + https://gohugo.io/tools/frontends/
 + https://gohugo.io/tools/migrations/
@@ -357,7 +201,6 @@ Last updated December 23, 2021. I'm not sure the optics are good here for what s
 + https://gohugo.io/tools/search/
 
 #### [Troubleshooting](https://gohugo.io/troubleshooting) {#troubleshooting}
-+ https://gohugo.io/troubleshooting/
 + https://gohugo.io/troubleshooting/build-performance/
 + https://gohugo.io/troubleshooting/faq/
 
