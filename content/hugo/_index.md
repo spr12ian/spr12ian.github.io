@@ -53,12 +53,12 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
     + [vendor](https://gohugo.io/commands/hugo_mod_vendor)
     + [verify](https://gohugo.io/commands/hugo_mod_verify)
 + [new](https://gohugo.io/commands/hugo_new)
-+ https://gohugo.io/commands/hugo_new_content/
-+ https://gohugo.io/commands/hugo_new_site/
-+ https://gohugo.io/commands/hugo_new_theme/
-+ https://gohugo.io/commands/hugo_server/
-+ https://gohugo.io/commands/hugo_server_trust/
-+ https://gohugo.io/commands/hugo_version/
+    + [content](https://gohugo.io/commands/hugo_new_content)
+    + [site](https://gohugo.io/commands/hugo_new_site)
+    + [theme](https://gohugo.io/commands/hugo_new_theme)
++ [server](https://gohugo.io/commands/hugo_server)
+    + [trust](https://gohugo.io/commands/hugo_server_trust)
++ [version](https://gohugo.io/commands/hugo_version)
 
 #### [Content Management](https://gohugo.io/content-management) {#content-management}
 + https://gohugo.io/content-management/archetypes/
