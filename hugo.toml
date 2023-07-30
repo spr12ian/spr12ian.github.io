@@ -13,8 +13,6 @@ title = 'My UK Gadgets & Me'
 
 DefaultContentLanguage = "en"
 
-
-
 [taxonomies]
 category = "categories"
 tag = "tags"
