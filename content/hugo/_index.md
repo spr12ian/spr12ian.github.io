@@ -187,21 +187,22 @@ This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hug
 + [faq](https://gohugo.io/troubleshooting/faq)
 
 #### [Variables](https://gohugo.io/variables) {#variables}
-+ https://gohugo.io/variables/files/
-+ https://gohugo.io/variables/git/
-+ https://gohugo.io/variables/menus/
-+ https://gohugo.io/variables/page/
-+ https://gohugo.io/variables/pages/
-+ https://gohugo.io/variables/shortcodes/
-+ https://gohugo.io/variables/site/
-+ https://gohugo.io/variables/sitemap/
-+ https://gohugo.io/variables/taxonomy/
++ [files](https://gohugo.io/variables/files)
++ [git](https://gohugo.io/variables/git)
++ [menus](https://gohugo.io/variables/menus)
++ [page](https://gohugo.io/variables/page)
++ [pages](https://gohugo.io/variables/pages)
++ [shortcodes](https://gohugo.io/variables/shortcodes)
++ [site](https://gohugo.io/variables/site)
++ [sitemap](https://gohugo.io/variables/sitemap)
++ [taxonomy](https://gohugo.io/variables/taxonomy)
 
 ### Further Reading {#more}
-+ https://de-souza.github.io/hugo-flex
 + https://github.com/bep/docuapi
-+ https://github.com/bep/my-modular-site
 + https://github.com/de-souza
++ https://github.com/gohugoio/hugoBasicExample/
++ https://github.com/gohugoio/hugoThemes
++ https://github.com/gohugoio/hugoThemesSiteBuilder
 + https://github.com/golang/go/wiki/Modules
 + https://github.com/scivision/hugo-flex-example
 + https://go.dev/blog/using-go-modules
