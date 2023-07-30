@@ -1,7 +1,7 @@
 ---
 title: "My UK Gadgets: etc."
 
-description: "How do I rename this section"
+description: "A website about me and my UK gadgets"
 cascade:
   featured_image: '/images/index.jpg'
 ---
@@ -12,5 +12,3 @@ I'll try to follow these guidelines as the blog progresses:
 + The title of my blog posts should always be a question
 + The description should give context to clarify the question
 + The post should explore and hopefully suggest an answer to the question
-
-I'd like to rename this section from 'posts' to 'blog'.

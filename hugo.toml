@@ -5,50 +5,44 @@ enableEmoji = true
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 languageCode = 'en-GB'
-paginate = 3
+paginate = 10
+pluralizelisttitles = false
+sectionPagesMenu = 'main'
 theme = "beautifulhugo"
 title = 'My UK Gadgets & Me'
 
 DefaultContentLanguage = "en"
 
-[menu]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
 
 [taxonomies]
 category = "categories"
 tag = "tags"
 series = "series"
 
-
 [privacy]
 
-  [privacy.vimeo]
-    disabled = false
-    simple = true
+[privacy.vimeo]
+disabled = false
+simple = true
 
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
 
-  [privacy.instagram]
-    disabled = false
-    simple = true
+[privacy.instagram]
+disabled = false
+simple = true
 
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
 
 [services]
 
-  [services.instagram]
-    disableInlineCSS = true
+[services.instagram]
+disableInlineCSS = true
 
-  [services.twitter]
-    disableInlineCSS = true
-
+[services.twitter]
+disableInlineCSS = true
