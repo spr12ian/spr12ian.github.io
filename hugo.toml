@@ -1,13 +1,53 @@
-baseURL = 'https://spr12ian.github.io/'
+author = "Ian Sweeney"
+baseURL = 'https://spr12ian.github.io'
 copyright = 'Ian Sweeney'
 enableEmoji = true
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
 languageCode = 'en-GB'
-paginate = 100
-sectionPagesMenu = 'main'
-theme = "beautifulhugo"
+paginate = 3
 title = 'My UK Gadgets & Me'
 
+DefaultContentLanguage = "en"
 
-[params]
-  mainSections = ["post","posts"]
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
 
