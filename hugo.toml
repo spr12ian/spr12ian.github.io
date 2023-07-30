@@ -6,6 +6,7 @@ enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 languageCode = 'en-GB'
 paginate = 3
+theme = "beautifulhugo"
 title = 'My UK Gadgets & Me'
 
 DefaultContentLanguage = "en"
