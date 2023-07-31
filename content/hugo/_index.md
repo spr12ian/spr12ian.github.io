@@ -5,6 +5,7 @@ description: "This blog is generated using Hugo"
 ---
 ### [Hugo](https://gohugo.io) {#hugo}
 This blog is generated using [Hugo](https://gohugo.io) and so far I like it. Hugo is a framework for building websites, a static site generator (SSG).
+The abundance of [themes](/hugo/themes) can be a little overwhelming.
 
 #### [About Hugo](https://gohugo.io/about) {#about-hugo}
 + [Benefits](https://gohugo.io/about/benefits)

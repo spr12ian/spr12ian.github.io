@@ -2,7 +2,6 @@
 title: "Highlight"
 date: 2023-07-26T12:54:02+01:00
 ---
-This highlighting is not very good:
 
 {{< highlight toml "linenos=inline, hl_lines=1 10-12" >}}
 author = "Ian Sweeney"
@@ -54,4 +53,3 @@ disableInlineCSS = true
 
 {{< /highlight >}}
 
-What's the solution?
