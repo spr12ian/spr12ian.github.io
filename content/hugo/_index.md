@@ -203,14 +203,17 @@ The abundance of [themes](/hugo/themes) can be a little overwhelming.
 + https://github.com/de-souza
 + https://github.com/gohugoio/hugoBasicExample/
 + https://github.com/gohugoio/hugoThemes
-+ https://github.com/gohugoio/hugoThemesSiteBuilder
 + https://github.com/golang/go/wiki/Modules
 + https://github.com/scivision/hugo-flex-example
 + https://go.dev/blog/using-go-modules
 + https://go.dev/ref/mod
 + https://www.scivision.dev
 + https://themes.gohugo.io/
++ [hugoThemesSiteBuilder](https://github.com/gohugoio/hugoThemesSiteBuilder)
 + [Add Sub Menu in Hugo Website](https://codingnconcepts.com/hugo/nested-menu-hugo)
 + [Chroma Style Gallery](https://xyproto.github.io/splash/docs/all.html)
++ [Get Started With Hugo - Changing Themes And Config Issues](https://damien.co/blog/2020-05-26-hugo-tips-themes-config)
 + [Go Programming FAQ](https://go.dev/doc/faq#git_https)
 + [Menus in Hugo](https://harrycresswell.com/writing/menus-in-hugo)
++ [Switching a Hugo theme](https://www.docsmatter.org/post/hugo-switching-themes)
++ [[Learn Hugo] Develop, Stage and Prod Configurations](https://dev.to/hi_artem/learn-hugo-develop-stage-and-prod-configurations-2k8d)
