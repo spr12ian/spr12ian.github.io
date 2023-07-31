@@ -13,3 +13,7 @@ submenu items for themes? sidemenu? cascading themes
 Shoud I list themes alphabetically?
 
 I need a config folder to switch between themes
+
+### Themes {#themes}
+
++ [Hugo Flex](https://themes.gohugo.io/themes/hugo-flex)

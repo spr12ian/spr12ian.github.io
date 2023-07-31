@@ -210,7 +210,7 @@ The abundance of [themes](/hugo/themes) can be a little overwhelming.
 + https://go.dev/ref/mod
 + https://www.scivision.dev
 + https://themes.gohugo.io/
-+ https://themes.gohugo.io/themes/hugo-flex/
-+ [Chroma Style Gallery](https://xyproto.github.io/splash/docs/all.html)
 + [Add Sub Menu in Hugo Website](https://codingnconcepts.com/hugo/nested-menu-hugo)
++ [Chroma Style Gallery](https://xyproto.github.io/splash/docs/all.html)
++ [Go Programming FAQ](https://go.dev/doc/faq#git_https)
 + [Menus in Hugo](https://harrycresswell.com/writing/menus-in-hugo)
