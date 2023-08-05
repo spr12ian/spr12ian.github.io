@@ -1,6 +1,6 @@
 archetypedir = 'archetypes'
 assetdir = 'assets'
-baseurl = 'https://spr12ian.github.io/'
+baseurl = 'https://spr12ian.github.io'
 contentdir = 'content'
 copyright = 'Ian Sweeney'
 datadir = 'data'
@@ -8,22 +8,22 @@ defaultcontentlanguage = 'en'
 enableemoji = true
 environment = 'production'
 i18ndir = 'i18n'
+ignoreerrors = ['error-remote-getjson']
 languagecode = 'en-GB'
 layoutdir = 'layouts'
-paginate = 100.0
+paginate = 10.0
 paginatepath = 'page'
-pluralizelisttitles = true
 publishdir = 'public'
 resourcedir = 'resources'
 sectionpagesmenu = 'main'
 staticdir = ['static']
 summarylength = 70.0
-theme = ['github.com/halogenica/beautifulhugo']
+theme = ['beautifulhugo']
 themesdir = 'themes'
 timeout = '30s'
 title = 'My UK Gadgets & Me'
 titlecasestyle = 'AP'
-workingdir = '/home/hopesurvives/projects/spr12ian.github.io'
+workingdir = '/home/probity/projects/spr12ian.github.io'
 
 [build]
   useresourcecachewhen = 'fallback'
@@ -139,6 +139,7 @@ workingdir = '/home/hopesurvives/projects/spr12ian.github.io'
     codefences = true
     linenostart = 1.0
     linenumbersintable = true
+    noclasses = true
     style = 'monokai'
     tabwidth = 4.0
 
@@ -317,13 +318,9 @@ workingdir = '/home/hopesurvives/projects/spr12ian.github.io'
   workspace = 'off'
 
   [module.hugoversion]
-    extended = true
 
 [[module.imports]]
-  path = 'github.com/halogenica/beautifulhugo'
-
-[[module.imports]]
-  path = 'github.com/halogenica/beautifulhugo'
+  path = 'beautifulhugo'
 
 [[module.mounts]]
   source = 'content'
@@ -446,31 +443,25 @@ workingdir = '/home/hopesurvives/projects/spr12ian.github.io'
   taxonomy = ['html', 'rss']
   term = ['html', 'rss']
 
-[params]
-  showbreadcrumbs = true
-  showpostnavlinks = true
-  showtoc = true
-
 [permalinks]
 
 [privacy]
   [privacy.disqus]
-    disable = true
 
   [privacy.googleanalytics]
-    disable = true
 
   [privacy.instagram]
-    disable = true
+    simple = true
 
   [privacy.twitter]
-    disable = true
+    enablednt = true
+    simple = true
 
   [privacy.vimeo]
-    disable = true
+    simple = true
 
   [privacy.youtube]
-    disable = true
+    privacyenhanced = true
 
 [related]
   threshold = 80.0
@@ -490,6 +481,8 @@ workingdir = '/home/hopesurvives/projects/spr12ian.github.io'
   weight = 80.0
 
 [security]
+  enableinlineshortcodes = true
+
   [security.exec]
     allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$']
     osenv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|GIT_EXEC_PATH|LD_LIBRARY_PATH|npm_config_(cache|init_module|userconfig)|pandoc_datadir|PYTHONHOME|SNAP|RUBYLIB)$']
@@ -515,11 +508,13 @@ workingdir = '/home/hopesurvives/projects/spr12ian.github.io'
   [services.googleanalytics]
 
   [services.instagram]
+    disableinlinecss = true
 
   [services.rss]
     limit = -1.0
 
   [services.twitter]
+    disableinlinecss = true
 
 [sitemap]
   filename = 'sitemap.xml'
@@ -527,4 +522,5 @@ workingdir = '/home/hopesurvives/projects/spr12ian.github.io'
 
 [taxonomies]
   category = 'categories'
+  series = 'series'
   tag = 'tags'
