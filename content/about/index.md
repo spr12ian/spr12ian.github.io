@@ -17,6 +17,6 @@ This website serves a number of purposes:
 — <cite>About Steve Perkins</cite>[^1]
 
 ### Does this blog have an ambition? {#ambition}
-I hope that some of the information on this website is useful to somebody (maybe ***you***). In a fantasy world I'd like this website to be amazingly popular and perhaps even generate a little money. I'm pretty much retired and every little helps!
+I hope that some of the information on this website is useful to somebody (maybe ***you***). In an ideal world I'd like this website to be amazingly popular and perhaps even generate a little money. I'm pretty much retired and every little helps!
 
 [^1]: [About Steve Perkins](https://steveperkins.com/about-steve-perkins/)
