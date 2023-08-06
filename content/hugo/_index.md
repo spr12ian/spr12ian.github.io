@@ -62,29 +62,29 @@ The abundance of [themes](/hugo/themes) can be a little overwhelming.
 + [version](https://gohugo.io/commands/hugo_version)
 
 #### [Content Management](https://gohugo.io/content-management) {#content-management}
-+ https://gohugo.io/content-management/archetypes
-+ https://gohugo.io/content-management/build-options
-+ https://gohugo.io/content-management/comments
-+ https://gohugo.io/content-management/cross-references
-+ https://gohugo.io/content-management/diagrams
-+ https://gohugo.io/content-management/formats
-+ https://gohugo.io/content-management/front-matter
-+ https://gohugo.io/content-management/image-processing
-+ https://gohugo.io/content-management/menus
-+ https://gohugo.io/content-management/multilingual
-+ https://gohugo.io/content-management/organization
-+ https://gohugo.io/content-management/page-bundles
-+ https://gohugo.io/content-management/page-resources
-+ https://gohugo.io/content-management/related
-+ https://gohugo.io/content-management/sections
-+ https://gohugo.io/content-management/shortcodes
-+ https://gohugo.io/content-management/static-files
-+ https://gohugo.io/content-management/summaries
-+ https://gohugo.io/content-management/syntax-highlighting
-+ https://gohugo.io/content-management/taxonomies
-+ https://gohugo.io/content-management/toc
-+ https://gohugo.io/content-management/types
-+ https://gohugo.io/content-management/urls
++ [archetypes](https://gohugo.io/content-management/archetypes)
++ [build-options](https://gohugo.io/content-management/build-options)
++ [comments](https://gohugo.io/content-management/comments)
++ [cross-references](https://gohugo.io/content-management/cross-references)
++ [diagrams](https://gohugo.io/content-management/diagrams)
++ [formats](https://gohugo.io/content-management/formats)
++ [front-matter](https://gohugo.io/content-management/front-matter)
++ [image-processing](https://gohugo.io/content-management/image-processing)
++ [menus](https://gohugo.io/content-management/menus)
++ [multilingual](https://gohugo.io/content-management/multilingual)
++ [organization](https://gohugo.io/content-management/organization)
++ [page-bundles](https://gohugo.io/content-management/page-bundles)
++ [page-resources](https://gohugo.io/content-management/page-resources)
++ [related](https://gohugo.io/content-management/related)
++ [sections](https://gohugo.io/content-management/sections)
++ [shortcodes](https://gohugo.io/content-management/shortcodes)
++ [static-files](https://gohugo.io/content-management/static-files)
++ [summaries](https://gohugo.io/content-management/summaries)
++ [syntax-highlighting](https://gohugo.io/content-management/syntax-highlighting)
++ [taxonomies](https://gohugo.io/content-management/taxonomies)
++ [toc](https://gohugo.io/content-management/toc)
++ [types](https://gohugo.io/content-management/types)
++ [urls](https://gohugo.io/content-management/urls)
 
 #### [Contribute](https://gohugo.io/contribute) {#contribute}
 + [development](https://gohugo.io/contribute/development)
