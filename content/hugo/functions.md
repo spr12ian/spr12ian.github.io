@@ -7,7 +7,6 @@ Go templates are lightweight but extensible. Go itself supplies built-in functio
 
 #### [Functions](https://gohugo.io/functions) {#functions}
 + [abslangurl](https://gohugo.io/functions/abslangurl)
-{{< absLangURL "" >}}
 + [absurl](https://gohugo.io/functions/absurl)
 + [adddate](https://gohugo.io/functions/adddate)
 + [after](https://gohugo.io/functions/after)
