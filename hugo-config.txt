@@ -11,7 +11,6 @@ i18ndir = 'i18n'
 ignoreerrors = ['error-remote-getjson']
 languagecode = 'en-GB'
 layoutdir = 'layouts'
-paginate = 10.0
 paginatepath = 'page'
 publishdir = 'public'
 resourcedir = 'resources'
@@ -442,6 +441,9 @@ workingdir = '/home/probity/projects/spr12ian.github.io'
   section = ['html', 'rss']
   taxonomy = ['html', 'rss']
   term = ['html', 'rss']
+
+[pagination]
+pagerSize = 10
 
 [permalinks]
 

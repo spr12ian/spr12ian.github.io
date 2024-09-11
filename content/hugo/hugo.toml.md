@@ -13,7 +13,6 @@ enableEmoji = true
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 languageCode = 'en-GB'
-paginate = 10
 pluralizelisttitles = false
 sectionPagesMenu = 'main'
 theme = "beautifulhugo"
@@ -25,6 +24,9 @@ DefaultContentLanguage = "en"
 category = "categories"
 tag = "tags"
 series = "series"
+
+[pagination]
+pagerSize = 10
 
 [privacy]
 
