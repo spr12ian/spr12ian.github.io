@@ -1,9 +1,6 @@
 # .github/workflows/deploy-hugo.yml
 # Build and deploy Hugo site to GitHub Pages
 
-# .github/workflows/deploy-hugo.yml
-# Build and deploy Hugo site to GitHub Pages
-
 name: Deploy Hugo site to Pages
 
 on:
@@ -31,32 +28,20 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
 
-        uses: actions/configure-pages@v4
-
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
-
       - name: Setup Hugo
         uses: crazy-max/ghaction-hugo@v2
-        uses: crazy-max/ghaction-hugo@v2
         with:
-          hugo-version: latest
-          extended: true
-
-      - name: Build Hugo site
           hugo-version: latest
           extended: true
 
@@ -65,9 +50,6 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-
-      - name: Upload Pages artifact
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload Pages artifact
