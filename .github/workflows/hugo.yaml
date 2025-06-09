@@ -1,5 +1,6 @@
 # .github/workflows/deploy-hugo.yml
 # Build and deploy Hugo site to GitHub Pages
+# This version installs Hugo manually (no deprecated GitHub actions used)
 
 name: Deploy Hugo site to Pages
 
@@ -39,11 +40,15 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
-      - name: Setup Hugo
-        uses: crazy-max/ghaction-hugo@v2
-        with:
-          hugo-version: latest
-          extended: true
+      - name: Install Hugo manually
+        run: |
+          HUGO_VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest \
+            | grep tag_name | cut -d '"' -f 4 | sed 's/^v//')
+          echo "Latest Hugo version: $HUGO_VERSION"
+          wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+          tar -xzf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+          sudo mv hugo /usr/local/bin/hugo
+          hugo version
 
       - name: Build Hugo site
         run: |
