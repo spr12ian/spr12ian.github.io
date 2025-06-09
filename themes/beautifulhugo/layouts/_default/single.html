@@ -5,6 +5,8 @@
       <article role="main" class="blog-post">
         {{ .Content }}
 
+        {{ partial "comments.html" . }}
+
         {{ if .Params.tags }}
           <div class="blog-tags">
             {{ range .Params.tags }}
@@ -57,35 +59,17 @@
 
       <div id="comments">
         <h2>Comments</h2>
-        <script src="https://utteranc.es/client.js"
-                repo="spr12ian/spr12ian.github.io"
-                issue-term="pathname"
-                theme="preferred-color-scheme"
-                crossorigin="anonymous"
-                async>
-        </script>
+        {{ $slug := .File.BaseFileName }}
+        {{ $comments := index site.Data.comments $slug }}
+
+        {{ if $comments }}
+
+        <ul> {{ range $comments }} <li style="margin-bottom: 1.5rem;"> <p><strong>{{ .name }}</strong> <small>{{ .date }}</small></p> <p>{{ .text }}</p> </li> {{ end }} </ul> {{ else }} <p>No comments yet. Be the first to comment!</p> {{ end }}
       </div>
       
       {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and .Site.Params.comments (ne .Type "page"))) }}
-        {{ if .Site.DisqusShortname }}
-          {{ if .Site.Params.delayDisqus }}
-          <div class="disqus-comments">                  
-            <button id="show-comments" class="btn btn-default" type="button">{{ i18n "show" }} <span class="disqus-comment-count" data-disqus-url="{{ trim .Permalink "/" }}">{{ i18n "comments" }}</span></button>
-            <div id="disqus_thread"></div>
-
-            <script type="text/javascript">
-              var disqus_config = function () {
-              this.page.url = '{{ trim .Permalink "/" }}';
-            };
-
-          </script>
-          </div>
-          {{ else }}
-          <div class="disqus-comments">
-            {{ template "_internal/disqus.html" . }}
-          </div>
-          {{ end }}
-        {{ end }}
+        
+        
         {{ if .Site.Params.staticman }}
           <div class="staticman-comments">
             {{ partial "staticman-comments.html" . }}

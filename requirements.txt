@@ -1,0 +1,3 @@
+# Top-level dev dependencies
+google-auth
+gspread
