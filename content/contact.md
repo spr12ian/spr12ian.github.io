@@ -16,5 +16,5 @@ This is an example of a custom shortcode that you can put right into your conten
 
 Fix these braces
 {{< highlight toml "linenos=inline" >}}
-{ {< form-contact action="https://example.com"  >}}
+{{< form-contact action="https://example.com" >}}
 {{< /highlight >}}
