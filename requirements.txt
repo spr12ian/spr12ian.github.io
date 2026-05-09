@@ -1,3 +1,5 @@
 # Top-level dev dependencies
 google-auth
 gspread
+pytest
+beautifulsoup4
