@@ -1,3 +1,5 @@
 .venv
+*.pyc
+__pycache__/
 public/
 resources/_gen/
