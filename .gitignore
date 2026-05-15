@@ -3,6 +3,5 @@
 __pycache__/
 public/
 resources/_gen/
-logs/
-!logs/
+logs/*
 !logs/.keep
