@@ -1,8 +1,0 @@
-🔎 Type checking with mypy...
-script: error: Duplicate module named "__main__" (also at "src")
-script: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#mapping-file-paths-to-modules for more info
-script: note: Common resolutions include:
-script: note:     a) using `--exclude` to avoid checking one of them,
-script: note:     b) adding `__init__.py` somewhere,
-script: note:     c) using `--explicit-package-bases` or adjusting `MYPYPATH`
-Found 1 error in 1 file (errors prevented further checking)
