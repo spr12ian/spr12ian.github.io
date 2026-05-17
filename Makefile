@@ -19,6 +19,7 @@ TOP_LEVEL_PACKAGES := \
 	google-auth \
 	gspread \
 	pytest \
+	pyright \
 	beautifulsoup4
 
 REQUIRED_VARS := \
@@ -103,7 +104,7 @@ pipx: venv ## Ensure pipx is installed for Python CLI tools
 install_tools: pipx ## Install formatting, linting, and typing tools
 	pipx install --force ruff
 	pipx install --force black
-	pipx install --force mypy
+	pipx install --force pyright
 
 requirements: venv ## Install Python package requirements and refresh requirements.txt
 	@echo "🚀 Upgrading pip, setuptools, and wheel..."
@@ -133,8 +134,8 @@ clean: logs ## Remove local caches, logs, requirements.txt, and the virtual envi
 	@rm -rf $(VENV_DIR)
 	@echo "🧹 Removing all __pycache__ directories..."
 	@find . -type d -name '__pycache__' -exec rm -rf {} +
-	@echo "🧹 Removing .mypy_cache directory..."
-	@rm -rf .mypy_cache
+	@echo "🧹 Removing type checker caches..."
+	@rm -rf .mypy_cache .pyright
 	@echo "🧹 Removing log files..."
 	@find . -type f -name '*.log' -print | tee logs/deleted_logs.txt | xargs -r rm -f
 	@echo "🧹 Removing requirements.txt ..."
@@ -213,10 +214,10 @@ test_only: venv logs ## Run isolated pytest tests from the tests directory
 	fi; \
 	echo "✅ Unit tests complete." | tee -a "$$log_file"
 
-types: logs ## Run mypy type checks
+types: logs ## Run pyright type checks
 	@log_file="logs/types.log"; \
-	echo "🔎 Type checking with mypy..." | tee "$$log_file"; \
-	mypy --explicit-package-bases src script tests | tee -a "$$log_file"
+	echo "🔎 Type checking with pyright..." | tee "$$log_file"; \
+	pyright src script tests | tee -a "$$log_file"
 
 check_env: ## Verify required environment variables are set
 	@for var in $$REQUIRED_VARS; do \

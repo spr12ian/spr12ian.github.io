@@ -2,4 +2,5 @@
 google-auth
 gspread
 pytest
+pyright
 beautifulsoup4
