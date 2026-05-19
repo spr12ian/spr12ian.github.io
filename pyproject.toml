@@ -1,0 +1,29 @@
+[project]
+name = "spr12ian-github-io"
+version = "0.1.0"
+description = "Python helpers for the spr12ian.github.io site."
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4",
+    "google-auth",
+    "gspread",
+]
+
+[dependency-groups]
+dev = [
+    "pyright",
+    "pytest",
+    "ruff>=0.15",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+
+[tool.pyright]
+include = ["export_comments.py", "tests"]
+pythonVersion = "3.14"
+typeCheckingMode = "basic"
