@@ -10,6 +10,9 @@ SHELL := /bin/bash
 GOOGLE_SERVICE_ACCOUNT_KEY ?= service-account.json
 
 UV_RUN := uv run
+PYTHON_DIR ?= .
+DIRENV_DIR := $(PYTHON_DIR)/.direnv
+DIRENV_ALLOW_STAMP := $(DIRENV_DIR)/allow.stamp
 
 REQUIRED_VARS := \
   OUR_FINANCES_DRIVE_KEY \
@@ -29,6 +32,7 @@ export $(REQUIRED_VARS)
 	ci \
 	clean \
 	db \
+	direnv-allow \
 	freeze \
 	download_sheets_to_sqlite \
 	format \
@@ -91,6 +95,15 @@ analyze_spreadsheet: check_env setup ## Analyze the configured Google spreadshee
 db: ## Open the configured SQLite database in sqlitebrowser
 	@$(MAKE) run_with_log ACTION=db COMMAND="sqlitebrowser $(OUR_FINANCES_SQLITE_DB_NAME) &"
 	@echo "sqlitebrowser $(OUR_FINANCES_SQLITE_DB_NAME) should be running in the background"
+
+direnv-allow: $(DIRENV_ALLOW_STAMP) ## Run direnv allow if .envrc changed
+
+$(DIRENV_ALLOW_STAMP): $(PYTHON_DIR)/.envrc
+	@command -v direnv >/dev/null || { echo "❌ direnv is not installed."; exit 1; }
+	@echo "🔓 Allowing $(PYTHON_DIR)/.envrc..."
+	@install -d "$(DIRENV_DIR)"
+	@direnv allow "$(PYTHON_DIR)"
+	@touch "$@"
 
 download_sheets_to_sqlite: check_env setup ## Download configured Google Sheets data into SQLite
 	@$(MAKE) run_with_log ACTION=download_sheets_to_sqlite COMMAND="$(UV_RUN) python -m script.download_sheets_to_sqlite"
