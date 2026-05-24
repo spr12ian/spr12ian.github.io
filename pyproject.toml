@@ -11,7 +11,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "pyright",
+    "basedpyright>=1.39",
     "pytest",
     "ruff>=0.15",
 ]
@@ -23,7 +23,7 @@ package = false
 line-length = 88
 target-version = "py314"
 
-[tool.pyright]
-include = ["export_comments.py", "tests"]
+[tool.basedpyright]
+include = ["export_comments.py"]
 pythonVersion = "3.14"
 typeCheckingMode = "basic"

@@ -1,6 +1,0 @@
-{
-  "include": ["src", "script", "tests"],
-  "typeCheckingMode": "basic",
-  "reportMissingImports": "none",
-  "reportMissingTypeStubs": "none"
-}

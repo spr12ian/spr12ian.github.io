@@ -77,7 +77,7 @@ clean: logs ## Remove local caches, logs, and the uv environment
 	@echo "🧹 Removing all __pycache__ directories..."
 	@find . -type d -name '__pycache__' -exec rm -rf {} +
 	@echo "🧹 Removing type checker caches..."
-	@rm -rf .mypy_cache .pyright
+	@rm -rf .basedpyright .pyright
 	@echo "🧹 Removing log files..."
 	@find . -type f -name '*.log' -print | tee logs/deleted_logs.txt | xargs -r rm -f
 	@echo "✅ Cleaned all caches and virtual environment."
@@ -163,10 +163,10 @@ test_only: setup logs ## Run isolated pytest tests from the tests directory
 	fi; \
 	echo "✅ Unit tests complete." | tee -a "$$log_file"
 
-types: logs ## Run pyright type checks
+types: logs ## Run basedpyright type checks
 	@log_file="logs/types.log"; \
-	echo "🔎 Type checking with pyright..." | tee "$$log_file"; \
-	$(UV_RUN) pyright export_comments.py tests | tee -a "$$log_file"
+	echo "🔎 Type checking with basedpyright..." | tee "$$log_file"; \
+	$(UV_RUN) basedpyright --level error | tee -a "$$log_file"
 
 check_env: ## Verify required environment variables are set
 	@for var in $$REQUIRED_VARS; do \
