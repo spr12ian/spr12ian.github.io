@@ -1,8 +1,11 @@
 # .github/workflows/deploy-hugo.yml
 # Build and deploy Hugo site to GitHub Pages
-# This version installs Hugo manually (no deprecated GitHub actions used)
+# Installs a pinned Hugo version and deploys with supported Pages actions.
 
 name: Deploy Hugo site to Pages
+
+env:
+  HUGO_VERSION: "0.161.1"
 
 on:
   push:
@@ -12,8 +15,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: "pages"
@@ -26,6 +27,8 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
@@ -35,20 +38,17 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        if: ${{ hashFiles('package-lock.json', 'npm-shrinkwrap.json') != '' }}
+        run: npm ci
 
-      - name: Install Hugo manually
-        run: |
-          HUGO_VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest \
-            | grep tag_name | cut -d '"' -f 4 | sed 's/^v//')
-          echo "Latest Hugo version: $HUGO_VERSION"
-          wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-          tar -xzf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-          sudo mv hugo /usr/local/bin/hugo
-          hugo version
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
 
       - name: Build Hugo site
         run: |
@@ -58,11 +58,14 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   deploy:
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -71,4 +74,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
