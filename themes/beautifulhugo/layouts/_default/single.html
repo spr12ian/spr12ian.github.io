@@ -57,16 +57,6 @@
         </ul>
       {{ end }}
 
-      <div id="comments">
-        <h2>Comments</h2>
-        {{ $slug := .File.BaseFileName }}
-        {{ $comments := index site.Data.comments $slug }}
-
-        {{ if $comments }}
-
-        <ul> {{ range $comments }} <li style="margin-bottom: 1.5rem;"> <p><strong>{{ .name }}</strong> <small>{{ .date }}</small></p> <p>{{ .text }}</p> </li> {{ end }} </ul> {{ else }} <p>No comments yet. Be the first to comment!</p> {{ end }}
-      </div>
-      
       {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and .Site.Params.comments (ne .Type "page"))) }}
         
         

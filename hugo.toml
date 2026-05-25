@@ -4,7 +4,7 @@ copyright = 'Ian Sweeney'
 enableEmoji = true
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
-languageCode = 'en-GB'
+locale = 'en-GB'
 pluralizelisttitles = false
 sectionPagesMenu = 'main'
 theme = "beautifulhugo"
@@ -20,13 +20,17 @@ series = "series"
 [pagination]
 pagerSize = 10
 
+[params.author]
+name = "Ian Sweeney"
+website = "https://spr12ian.github.io"
+
 [privacy]
 
 [privacy.vimeo]
 disabled = false
 simple = true
 
-[privacy.twitter]
+[privacy.x]
 disabled = false
 enableDNT = true
 simple = true
@@ -44,5 +48,5 @@ privacyEnhanced = true
 [services.instagram]
 disableInlineCSS = true
 
-[services.twitter]
+[services.x]
 disableInlineCSS = true

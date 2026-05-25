@@ -1,6 +1,9 @@
 <h2>Comments</h2>
 {{ $slug := .File.BaseFileName }}
-{{ $comments := index site.Data.comments $slug }}
+{{ if eq $slug "index" }}
+  {{ $slug = path.Base .File.Dir }}
+{{ end }}
+{{ $comments := index hugo.Data.comments $slug }}
 
 {{ if $comments }}
   <ul class="comment-list"> 
