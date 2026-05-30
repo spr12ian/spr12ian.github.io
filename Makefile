@@ -96,3 +96,34 @@ distclean: clean ## Remove local caches as well
 
 help: ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-18s\033[0m %s\n", $$1, $$2}'
+
+UV_SYNC ?= uv sync
+
+CACHE_DIR ?= .cache
+
+.PHONY: direnv-allow
+direnv-allow: sentinel-dot-envrc ## Run direnv allow if .envrc changed
+
+.PHONY: sentinel-dot-envrc
+sentinel-dot-envrc: $(CACHE_DIR)/.sentinel-dot-envrc
+	@echo "🔍 Checking for .envrc changes..."
+
+.PHONY: sentinel-uv-lock
+sentinel-uv-lock: $(CACHE_DIR)/.sentinel-uv-lock
+	@echo "🔍 Checking for uv.lock changes..."
+
+$(CACHE_DIR):
+	@echo "🔍 Ensuring cache directory exists..."
+	@install -d "$@"
+
+$(CACHE_DIR)/.sentinel-dot-envrc: .envrc | $(CACHE_DIR)
+	@echo "🔍 Checking for direnv..."
+	@command -v direnv >/dev/null || { echo "❌ direnv is not installed."; exit 1; }
+	@echo "🔓 Allowing .envrc..."
+	@direnv allow "."
+	@touch "$@"
+
+$(CACHE_DIR)/.sentinel-uv-lock: uv.lock | $(CACHE_DIR)
+	@echo "🔒 Syncing dependencies based on uv.lock..."
+	$(UV_SYNC)
+	@touch "$@"
